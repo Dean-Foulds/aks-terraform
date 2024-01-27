@@ -1,6 +1,6 @@
 
 
-```markdown
+```
 # Project Networking Infrastructure as Code (IaC)
 
 ## Overview
@@ -103,15 +103,3 @@ Your Name
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-Remember to replace placeholder values like "your-networking-rg" with your actual resource names and details.
-
-After updating the README file, commit your changes, and push them to your GitHub repository:
-
-```bash
-git add .
-git commit -m "Add documentation for networking module"
-git push origin main
-```
-
-Make sure to replace "main" with the name of your branch if you're using a different branch.

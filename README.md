@@ -1,4 +1,3 @@
-```markdown
 # Project Networking Infrastructure as Code (IaC)
 
 ## Overview
@@ -11,14 +10,6 @@ This project utilizes Infrastructure as Code (IaC) to define networking services
 
 The "networking-module" directory contains Terraform configurations for defining Azure networking resources.
 
-
-networking-module/
-|-- main.tf
-|-- outputs.tf
-|-- variables.tf
-|-- terraform.tfvars
-|-- README.md
-```
 
 - **main.tf:** Defines the main configuration for networking resources.
 - **outputs.tf:** Specifies the output variables to be used by other modules.
@@ -91,13 +82,5 @@ vnet_name = "your-vnet"
 control_plane_subnet_name = "control-plane-subnet"
 worker_nodes_subnet_name = "worker-nodes-subnet"
 nsg_name = "aks-nsg"
-```
 
-## Author
 
-```plaintext
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```

@@ -1,4 +1,4 @@
-```mardown
+```markdown
 # Project Networking Infrastructure as Code (IaC)
 
 ## Overview

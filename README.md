@@ -1,4 +1,4 @@
-```
+```markdown
 # Project Networking Infrastructure as Code (IaC)
 
 ## Overview
@@ -11,7 +11,7 @@ This project utilizes Infrastructure as Code (IaC) to define networking services
 
 The "networking-module" directory contains Terraform configurations for defining Azure networking resources.
 
-```
+```plaintext
 networking-module/
 |-- main.tf
 |-- outputs.tf

@@ -83,4 +83,39 @@ control_plane_subnet_name = "control-plane-subnet"
 worker_nodes_subnet_name = "worker-nodes-subnet"
 nsg_name = "aks-nsg"
 
+# Project Name
+
+## Kubernetes Deployment Documentation
+
+### Deployment and Service Manifests
+
+In this project, we use Kubernetes Deployment and Service manifests to deploy and expose our application within the AKS cluster. Here are the key configurations:
+
+#### Deployment Manifest (deployment-manifest.yaml)
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask-app
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
+      - name: flask-app-container
+        image: swissbanker/flask-app:latest
+        ports:
+        - containerPort: 5000
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
 
